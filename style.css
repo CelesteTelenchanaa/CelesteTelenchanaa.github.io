@@ -1,7 +1,9 @@
 /* Importar una fuente bonita y redondeada de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
-/* Colores base y fondo pastel */
+/* =========================================
+   ESTILOS BASE Y FONDO
+   ========================================= */
 body {
     font-family: 'Quicksand', sans-serif;
     background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%); /* Degradado rosa pastel a morado pastel */
@@ -14,7 +16,9 @@ body {
     min-height: 100vh;
 }
 
-/* El recuadro principal de la tarjeta */
+/* =========================================
+   CONTENEDOR PRINCIPAL (LA TARJETA)
+   ========================================= */
 .container {
     background-color: #ffffff;
     width: 90%;
@@ -33,26 +37,14 @@ body {
     object-fit: cover; /* Para que la imagen no se deforme */
 }
 
-/* Contenido interno */
+/* Contenido de texto principal */
 .content {
-    padding: 0 40px 40px 40px;
-}
-
-/* Foto de perfil (si decides poner una luego) */
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    margin-top: -60px; /* Hace que suba y se superponga al banner */
-    background-color: #f3e5f5;
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px 40px;
 }
 
 h1 {
     color: #8e24aa; /* Morado fuerte */
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 2em;
     font-weight: 700;
 }
@@ -70,7 +62,9 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Botones / Enlaces */
+/* =========================================
+   BOTONES PRINCIPALES
+   ========================================= */
 .links {
     display: flex;
     flex-direction: column;
@@ -90,19 +84,16 @@ h1 {
     color: white;
 }
 
-/* Botón de GitHub */
 .btn-github {
     background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Degradado morado */
     box-shadow: 0 5px 15px rgba(106, 27, 154, 0.3);
 }
 
-/* Botón de Instagram */
 .btn-instagram {
     background: linear-gradient(135deg, #ec407a, #f48fb1); /* Degradado rosa */
     box-shadow: 0 5px 15px rgba(236, 64, 122, 0.3);
 }
 
-/* Botón de Email */
 .btn-email {
     background: linear-gradient(135deg, #9575cd, #b39ddb); /* Degradado lila */
     box-shadow: 0 5px 15px rgba(149, 117, 205, 0.3);
@@ -111,4 +102,94 @@ h1 {
 .btn:hover {
     transform: translateY(-3px); /* Efecto de que salta al pasar el mouse */
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   SECCIONES NUEVAS (HABILIDADES Y PROYECTOS)
+   ========================================= */
+.section {
+    padding: 30px 40px;
+    border-top: 2px dashed #f3e5f5; /* Línea punteada pastel para separar */
+}
+
+h2 {
+    color: #8e24aa; /* Morado fuerte */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Cuadrícula para las habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #fdf5ff; /* Fondo lila muy suave */
+    border: 1px solid #f3e5f5;
+    padding: 15px;
+    border-radius: 15px;
+    color: #666;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.03);
+    border-color: #f48fb1;
+}
+
+.skill-card strong {
+    color: #d81b60; /* Rosa */
+    font-size: 1.1em;
+}
+
+/* Tarjeta de Proyecto */
+.project-card {
+    background-color: #fff;
+    border: 2px solid #f3e5f5;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(200, 150, 200, 0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #4a4a4a;
+}
+
+.project-card p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #f3e5f5;
+    color: #8e24aa;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #e1bee7;
+}
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+.footer {
+    background-color: #fce4ec; /* Fondo rosa pastel */
+    padding: 20px;
+    color: #880e4f;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
 }
