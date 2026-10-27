@@ -54,39 +54,40 @@
                 </div>
             </header>
 
-            <!-- BANNER DE BIENVENIDA -->
-            <section class="welcome-banner">
-                <div class="welcome-text">
-                    <h2>¡Buenos días, Celeste! 🌸</h2>
-                    <p>Hoy es un gran día para aprender algo nuevo. ¡Sigue así!</p>
-                    <a href="https://github.com/CelesteTelenchanaa" target="_blank" class="btn-primary">Ir a mi GitHub <i class="fab fa-github"></i></a>
-                </div>
-                <div class="welcome-img-container">
+            <!-- BANNER DE BIENVENIDA CON FOTO -->
+            <section class="welcome-banner-container">
+                <div class="welcome-img-wrapper">
                     <img src="https://raw.githubusercontent.com/CelesteTelenchanaa/celestetelenchanaa/main/banner.png" alt="Banner Anime" class="welcome-img">
+                </div>
+                <div class="welcome-text-card">
+                    <h2>¡Hola! Soy Celeste Telenchana 🌸</h2>
+                    <p class="subtitle">Estudiante y futura Desarrolladora Web</p>
+                    <p class="greeting">Hoy es un gran día para aprender algo nuevo. ¡Sigue así!</p>
+                    <a href="https://github.com/CelesteTelenchanaa" target="_blank" class="btn-primary">Ir a mi GitHub <i class="fab fa-github"></i></a>
                 </div>
             </section>
 
             <!-- TARJETAS DE ESTADÍSTICAS -->
             <section class="stats-grid">
-                <div class="stat-card" style="background-color: #e0f2f1; color: #00796b;">
+                <div class="stat-card">
                     <i class="fas fa-code stat-icon"></i>
                     <h3>HTML & CSS</h3>
                     <p class="stat-number">80%</p>
                     <span class="stat-desc">Dominio</span>
                 </div>
-                <div class="stat-card" style="background-color: #fce4ec; color: #c2185b;">
+                <div class="stat-card">
                     <i class="fab fa-git-alt stat-icon"></i>
                     <h3>Git & GitHub</h3>
                     <p class="stat-number">70%</p>
                     <span class="stat-desc">Dominio</span>
                 </div>
-                <div class="stat-card" style="background-color: #fff3e0; color: #e65100;">
+                <div class="stat-card">
                     <i class="fab fa-js stat-icon"></i>
                     <h3>JavaScript</h3>
                     <p class="stat-number">20%</p>
                     <span class="stat-desc">Aprendiendo</span>
                 </div>
-                <div class="stat-card" style="background-color: #e8eaf6; color: #283593;">
+                <div class="stat-card">
                     <i class="fab fa-python stat-icon"></i>
                     <h3>Python & Java</h3>
                     <p class="stat-number">10%</p>
@@ -104,12 +105,12 @@
                         <i class="fas fa-ellipsis-h"></i>
                     </div>
                     <div class="chart-container">
-                        <div class="bar-wrapper"><div class="bar" style="height: 80%; background: #81c784;"></div><span>HTML</span></div>
-                        <div class="bar-wrapper"><div class="bar" style="height: 70%; background: #4db6ac;"></div><span>CSS</span></div>
-                        <div class="bar-wrapper"><div class="bar" style="height: 20%; background: #ffb74d;"></div><span>JS</span></div>
-                        <div class="bar-wrapper"><div class="bar" style="height: 70%; background: #f06292;"></div><span>Git</span></div>
-                        <div class="bar-wrapper"><div class="bar" style="height: 10%; background: #9575cd;"></div><span>Java</span></div>
-                        <div class="bar-wrapper"><div class="bar" style="height: 10%; background: #64b5f6;"></div><span>Python</span></div>
+                        <div class="bar-wrapper"><div class="bar" style="height: 80%;"></div><span>HTML</span></div>
+                        <div class="bar-wrapper"><div class="bar" style="height: 70%;"></div><span>CSS</span></div>
+                        <div class="bar-wrapper"><div class="bar" style="height: 20%;"></div><span>JS</span></div>
+                        <div class="bar-wrapper"><div class="bar" style="height: 70%;"></div><span>Git</span></div>
+                        <div class="bar-wrapper"><div class="bar" style="height: 10%;"></div><span>Java</span></div>
+                        <div class="bar-wrapper"><div class="bar" style="height: 10%;"></div><span>Python</span></div>
                     </div>
                 </section>
 
@@ -120,9 +121,7 @@
                         <a href="https://github.com/CelesteTelenchanaa" target="_blank" class="link-small">Ver todos</a>
                     </div>
                     <div class="project-item">
-                        <div class="project-icon" style="background-color: #ffe0b2; color: #e65100;">
-                            <i class="fas fa-book"></i>
-                        </div>
+                        <div class="project-icon"><i class="fas fa-book"></i></div>
                         <div class="project-info">
                             <h4>comandos_basicos_b</h4>
                             <p>Guía de Git 📘</p>
@@ -130,9 +129,7 @@
                         <a href="https://github.com/celestetelenchanaa/comandos_basicos_b" target="_blank"><i class="fas fa-chevron-right"></i></a>
                     </div>
                     <div class="project-item">
-                        <div class="project-icon" style="background-color: #f3e5f5; color: #8e24aa;">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
+                        <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
                         <div class="project-info">
                             <h4>Portafolio Web</h4>
                             <p>Este mismo sitio 🚀</p>
@@ -143,7 +140,7 @@
             </div>
 
             <!-- NUEVA SECCIÓN: DATOS CURIOSOS Y RECOMENDACIONES -->
-            <div class="content-grid" style="margin-top: 25px;">
+            <div class="content-grid">
                 
                 <!-- Datos Curiosos -->
                 <section class="card facts-card">
@@ -152,16 +149,16 @@
                     </div>
                     <div class="fact-list">
                         <div class="fact-item">
-                            <i class="fas fa-bug text-pink"></i>
-                            <p>El primer "bug" de la historia fue literalmente un insecto (una polilla) atrapado dentro de una computadora en 1947.</p>
+                            <i class="fas fa-bug"></i>
+                            <p>El primer "bug" de la historia fue literalmente un insecto atrapado dentro de una computadora en 1947.</p>
                         </div>
                         <div class="fact-item">
-                            <i class="fas fa-music text-purple"></i>
-                            <p>Escuchar música mientras programas puede aumentar tu concentración y hacer que el código fluya mejor (¡lo comprobé!).</p>
+                            <i class="fas fa-music"></i>
+                            <p>Escuchar música mientras programas puede aumentar tu concentración y hacer que el código fluya mejor.</p>
                         </div>
                         <div class="fact-item">
-                            <i class="fas fa-coffee text-orange"></i>
-                            <p>El nombre "JavaScript" se eligió por pura estrategia de marketing, ¡no tiene nada que ver con el lenguaje Java!</p>
+                            <i class="fas fa-coffee"></i>
+                            <p>El nombre "JavaScript" se eligió por pura estrategia de marketing, ¡no tiene nada que ver con Java!</p>
                         </div>
                     </div>
                 </section>
@@ -169,28 +166,28 @@
                 <!-- Recomendaciones -->
                 <section class="card recommendations-card">
                     <div class="card-header">
-                        <h3>🚀 Si te gusta programar, te recomiendo:</h3>
+                        <h3>🚀 Si te gusta programar:</h3>
                     </div>
                     <ul class="rec-list">
                         <li>
-                            <i class="fab fa-youtube text-red"></i>
+                            <i class="fab fa-youtube"></i>
                             <div>
                                 <strong>Canales de YouTube:</strong>
-                                <p>MiduDev, MoureDev y freeCodeCamp para aprender gratis y en español.</p>
+                                <p>MiduDev, MoureDev y freeCodeCamp para aprender gratis.</p>
                             </div>
                         </li>
                         <li>
-                            <i class="fas fa-gamepad text-blue"></i>
+                            <i class="fas fa-gamepad"></i>
                             <div>
                                 <strong>Juegos para practicar:</strong>
                                 <p>Flexbox Froggy y CSS Diner (¡aprendes CSS jugando!).</p>
                             </div>
                         </li>
                         <li>
-                            <i class="fas fa-book-open text-green"></i>
+                            <i class="fas fa-book-open"></i>
                             <div>
                                 <strong>Documentación:</strong>
-                                <p>MDN Web Docs es la biblia de todo desarrollador web. ¡Siempre tenla abierta!</p>
+                                <p>MDN Web Docs es la biblia de todo desarrollador web.</p>
                             </div>
                         </li>
                     </ul>
@@ -198,7 +195,7 @@
             </div>
 
             <!-- SECCIÓN ANIME Y ESTADÍSTICAS -->
-            <section class="card anime-card" style="margin-top: 25px;">
+            <section class="card anime-card">
                 <div class="anime-text">
                     <h3>⛩️ Fuera del código</h3>
                     <p>Si no estoy programando, probablemente estoy viendo algún anime o escuchando música.</p>
